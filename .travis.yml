@@ -20,8 +20,10 @@ jobs:
       julia: 1.5
     - name: "Julia nightly"
       julia: nightly
-    - name: "ARM64, Julia 1.6"
-      arch: arm64
+    - name: "ARM64, Julia 1.5"
+      arch: arm64-graviton2
+      virt: lxd
+      group: edge
       julia: 1.5
   fast_finish: true
   allow_failures:
